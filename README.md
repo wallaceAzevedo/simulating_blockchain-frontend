@@ -1,10 +1,18 @@
+<div align="center">
+  <img alt="Blockchain" title="#blockchain" href="https://goblockchain.io/" src="./src/assets/img/github-project-logo.png" />
+</div>
 
-
-<h2 align="center">Sumilando uma blockchian Frontend</h2>
+<h2 align="center">Sumilando um blockchian Frontend</h2>
 
 ---
 
-Aplicação angular que permite interagir com um blockchain. Você pode ver os blocos na cadeia, ver as transações dentro deles e até mesmo criar novas transações e blocos de minas.
+Aplicação angular que permite interagir com um blockchain. Você pode ver os blocos na cadeia, ver as transações dentro deles e até mesmo criar novas transações e blocos.
+
+<h2>Ferramentas usadas</h2>
+<li>Bootstrap 
+<li>Angular framework
+
+</br>
 
 
 ## 🏁 Como rodar em sua maquina <a name = "getting_started"></a>
