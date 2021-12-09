@@ -1,0 +1,21 @@
+<div class="container">
+
+	<div class="alert alert-success" role="alert" *ngIf="justAddedTx">
+		Transação criada com sucesso!
+	</div>
+
+	<h1>Transações pendentes</h1>
+	<p>Essas transações estão esperando para serem incluídas no próximo bloco. O próximo bloco é criado quando você inicia o processo de mineração.</p>
+
+	<app-transactions-table
+		[transactions]="pendingTransactions">
+	</app-transactions-table>
+
+	 <button class="btn btn-primary" *ngIf="pendingTransactions.length > 0 && miningInProgress === false" (click)="minePendingTransactions()">
+		Comece a minerar
+    </button>
+
+    <div *ngIf="miningInProgress === true">
+    	Bloco de mineração .. aguarde um pouco ...
+    </div>
+</div>

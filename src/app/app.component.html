@@ -1,0 +1,42 @@
+<nav class="navbar navbar-dark bg-dark">
+  <a class="navbar-brand" routerLink="/">
+    <img src="../assets/img/goblockchain.png" width="30" height="30" class="d-inline-block align-top" alt="goblockchain"/>
+    &nbsp;goBlockchain
+  </a>
+
+  <div>
+    <button routerLink="/new/transaction/pending" class="btn btn-outline-light" *ngIf="thereArePendingTransactions()">
+      Transações pendentes
+      <span class="badge badge-light">{{blockchain.pendingTransactions.length}}</span>
+    </button>
+    &nbsp;
+    <button routerLink="/settings" class="btn btn-outline-light">
+      Configurações
+    </button>
+    &nbsp;
+    <button routerLink="/new/transaction" class="btn btn-outline-light">
+      Criar transação
+    </button>
+  </div>
+</nav>
+
+<br>
+
+<div class="container" *ngIf="showInfoMessage === true">
+  <div class="alert alert-primary alert-dismissible fade show" role="alert">
+    <h4 class="alert-heading">Simulando uma blockchain</h4>
+    Essa ferramenta oferece a capacidade de ver os bastidores de um blockchain. Você pode criar transações, minar blocos e ver como todos eles funcionam juntos. Vá em frente, faça algumas transações, garimpe um bloco, ajuste as configurações e veja os efeitos de suas ações em tempo real.
+    <hr>
+    <a href="https://github.com/wallaceAzevedo/simulating_blockchain_frontend">Codigo</a> - Based on <a href="https://github.com/SavjeeTutorials/SavjeeCoin">Fonte</a>.
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close" (click)="dismissInfoMessage()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+</div>
+
+<router-outlet></router-outlet>
+
+<footer class="text-muted text-center" style="margin-top: 150px;">
+  <small>Apenas para fins educacionais.<br>
+  <a href="https://github.com/wallaceAzevedo/simulating_blockchain_frontend" target="_blank">Clique para visualizar codigo no gitHub.</a></small>
+</footer>
