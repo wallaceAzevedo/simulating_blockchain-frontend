@@ -17,11 +17,6 @@ Obtenha uma cópia do front-end em sua máquina local (para brincar, testar ou d
 git clone https://github.com/wallaceAzevedo/simulating_blockchain_frontend.git
 ```
 
-Instale as dependências: 
-```
-npm install
-```
-
 Rodar a aplicação:
 ```
 npm start
@@ -32,15 +27,24 @@ Neste ponto, o aplicativo deve estar sendo executado em sua máquina em [http://
 
 ## 📸 Screenshots
 
-**Home page:** Seeing blocks on the chain & exploring transactions in each block.
-![](https://savjee.github.io/savjeecoin-frontend/assets/screenshots/blockchain-overview.png)
+ 
+<h3>Home page:</h3> 
+<p>Vendo os blocos na cadeia e explorando as transações em cada bloco.</p>
+<img alt="Blockchain" title="#blockchain" href="https://goblockchain.io/" src="./src/assets/screenshots/blockchain-overview.png" />
 
-**Creating new transactions:** You can create new transactions to any wallet for any amount (no validation). New transactions will be added to the "pending transactions", ready to be included in the next block.
-![](https://savjee.github.io/savjeecoin-frontend/assets/screenshots/create-new-transactions.png)
+---
+</br>
 
-**Pending transactinos:** List of all pending transactions. These will be included in the next block when the mining process starts.
-![](https://savjee.github.io/savjeecoin-frontend/assets/screenshots/pending-transactions.png)
+<h3>Criando novas transações:</h3> <p>Você pode criar novas transações para qualquer carteira de qualquer valor (sem validação). Novas transações serão adicionadas às "transações pendentes", prontas para serem incluídas no próximo bloco.</p>
+<img alt="Blockchain" title="#blockchain" href="https://goblockchain.io/" src="./src/assets/screenshots/create-new-transactions.png" />
 
+---
+</br>
 
+<h3>Transações pendentes:</h3> 
+<p> Lista de todas as transações pendentes. Eles serão incluídos no próximo bloco quando o processo de mineração começar.</p>
+<img alt="Blockchain" title="#blockchain" href="https://goblockchain.io/" src="./src/assets/screenshots/pending-transactions.png" />
 
-*⚠️This is for educational purposes only. This is by no means a complete blockchain implementation (nor does it aim to be one). Use it to learn how blockchains operate.*
+---
+</br>
+⚠️Isso é apenas para fins educacionais. Isso não é de forma alguma uma implementação de blockchain completa (nem pretende ser uma). Use-o para aprender como os blockchains funcionam.
